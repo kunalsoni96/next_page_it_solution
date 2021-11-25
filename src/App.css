@@ -1,0 +1,34 @@
+table thead tr{
+    background-color: #260268;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+
+
+table tbody tr td{
+    border: 2px solid #260268;
+    text-align: center;
+}
+
+#flash_msg{
+    color:"white";
+    background:#E53906;
+    padding:20px;
+    border-radius: 10px; 
+    width: 350px;
+}
+
+#flash_tag{   
+    position:absolute;
+    margin:auto;
+    left:40%;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.fa-shopping-cart{
+    margin-top: 15px;
+}
