@@ -12,8 +12,8 @@ const Home = () => {
     const data = useSelector((state)=>{
         return state.TicketBookReducer
     })
-    const booknow = (id) => {
-        dispatch(TicketBook(id))
+    const booknow = (data) => {
+        dispatch(TicketBook(data))
     }
 
     return(
