@@ -31,7 +31,7 @@ const Home = () => {
                 </thead>
                 <tbody>
                 {data.list.map((value, index)=>(
-                    <BookingList  myClick={() => booknow(value._id)}   index={index} Subject={value.Subject} Date={value.Date} Time={value.Time} Availability={value.Availability}  />
+                    <BookingList  myClick={() => booknow(value)}   index={index} Subject={value.Subject} Date={value.Date} Time={value.Time} Availability={value.Availability}  />
                 ))}
                 </tbody>
                
