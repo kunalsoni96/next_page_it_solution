@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header  from './Header';
 import {TicketBookingList, TicketBook} from './../redux/actions/TicketBookingAction';
 import {useDispatch, useSelector} from 'react-redux';
-
+import BookingList from './BookingList';
 const Home = () => {
     const dispatch = useDispatch();
     useEffect(()=>{
@@ -31,24 +31,8 @@ const Home = () => {
                 </thead>
                 <tbody>
                 {data.list.map((value, index)=>(
-                    <tr>
-                        <td key={index}>{value.Subject}</td>
-                        <td>{value.Date}</td>
-                        <td>{value.Time}</td>
-                        <td>{value.Availability}</td>
-                        <td>
-                            {
-                            value.Availability==0 ?
-                           <button style={{backgroundColor:"#C03C32", color:"white", cursor:"pointer"}} className="form-control">Full</button> :
-
-                           <button onClick={()=>booknow(value)} style={{backgroundColor:"orange", color:"white", cursor:"pointer"}} className="form-control">
-                              Book Now
-                           </button> 
-
-                            }
-                        </td>
-                    </tr>
-                    ))}
+                    <BookingList  myClick={() => booknow(value._id)}   index={index} Subject={value.Subject} Date={value.Date} Time={value.Time} Availability={value.Availability}  />
+                ))}
                 </tbody>
                
             </table>

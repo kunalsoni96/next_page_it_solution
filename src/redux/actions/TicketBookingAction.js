@@ -88,5 +88,5 @@ export const CartList = () => dispatch => {
         dispatch({
           type: CART_LIST_LOAD,
           payload: Cart,
-        });       
+        });    
 }

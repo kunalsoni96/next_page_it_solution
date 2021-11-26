@@ -27,16 +27,16 @@ const Header = () => {
     const cart = useSelector((state)=>{
         return state.TicketBookReducer.cart
     });
-
+    
 
     return (
         <div>
         <center>
-        <FlashMessage duration={5000}>
+        {/* <FlashMessage duration={5000}>
         <div id="flash_tag">
         <p id="flash_msg" style={{color:"white"}}>I will disapper in 5 seconds!</p>
         </div>
-        </FlashMessage>
+        </FlashMessage> */}
         </center>
 
         <div style={{textAlign:"right"}}>
